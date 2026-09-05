@@ -15,24 +15,24 @@ python watchdog.py "C:\path\to\your\agent\folder"
 
 ## The problem
 
-You give an AI agent a task. It goes away and works. It comes back.
+You give an AI agent a task. It goes away and works. It comes back. (probably "uphill and through knee deep snow")
 
-While it was away it might have created files. It might have edited its own
-instructions. It might have rewritten its own code. **Usually nobody tells
-you.** You find out by opening a folder and thinking "why are there fifteen
+While it was away it might have created files. (this is not how this actually works but we let claude have its story time moment) It might have edited its own
+instructions. (likely) It might have rewritten its own code. (less unlikely than you would think) **Usually nobody tells
+you.** (don't trust the agent on this) You find out by opening a folder and thinking "why are there fifteen
 files in here that I don't remember," or by reading a config file and noticing
 it doesn't say what it said yesterday.
 
-This is a small program that notices for you.
+This is a small program that notices for you. 
 
-It is not clever, and that is the point. It takes a fingerprint of every file
+It is not clever, and that is the point. (i see what you did there claude) It takes a fingerprint of every file
 in a folder, checks again a minute later, and tells you what changed. It cannot
 be reasoned with, distracted, or persuaded that a change was fine actually. It
 notices, or it doesn't.
 
 **One thing it treats as special.** If a change touches a *script* file — `.py`,
 `.ps1`, `.bat`, `.js` and similar — it says so separately and loudly, because an
-agent editing its own code is the thing you most want to know about.
+agent editing its own code is the thing you most want to know about. 
 
 ---
 
@@ -40,7 +40,6 @@ agent editing its own code is the thing you most want to know about.
 
 (bc agents be agenting)
 
-See:
 
 - [Hugging Face technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline)
 - [Anthropic's review of 141,006 runs](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals)
@@ -89,6 +88,8 @@ That's it. Leave the window open. It prints a line every check.
 ---
 
 ## What it looks like
+
+(claude said no to making the watchdog bark, alas...)
 
 A real session, watching a folder while an agent worked in it. The agent
 rewrote its own instructions file, then a minute later added a script:
