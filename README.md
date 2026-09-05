@@ -17,7 +17,7 @@ python watchdog.py "C:\path\to\your\agent\folder"
 
 You give an AI agent a task. It goes away and works. It comes back. (probably "uphill and through knee deep snow")
 
-While it was away it might have created files. (this is not how this actually works but we let claudius have its story time moment) It might have edited its own
+While it was away it might have created files. (this is not how this works but we let claudius have its story time moment) It might have edited its own
 instructions. It might have rewritten its own code. **Usually nobody tells
 you.** (don't trust agents on this, or sandboxing, unless you actually know what you are doing, but then you are not here) You find out by opening a folder and thinking "why are there fifteen
 files in here that I don't remember" (best case scenario), or by reading a config file and noticing
@@ -32,7 +32,7 @@ notices, or it doesn't.
 
 **One thing it treats as special.** If a change touches a *script* file — `.py`,
 `.ps1`, `.bat`, `.js` and similar — it says so separately and loudly, because an
-agent editing its own code is the thing you most want to know about. 
+agent editing its own code is the thing you most want to know about. ('nam flashback meme)
 
 ---
 
