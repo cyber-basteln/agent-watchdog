@@ -1,0 +1,13 @@
+# The watcher's own output. Contains copies of whatever it was watching,
+# which may include anything that folder held. Never commit it.
+watch_data/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
