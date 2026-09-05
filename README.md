@@ -99,14 +99,70 @@ That's it. Leave the window open. It prints a line every check.
 
 ---
 
-## Reading the output
+## What it looks like
+
+A real session, watching a folder while an agent worked in it. The agent
+rewrote its own instructions file, then a minute later added a script:
 
 ```
-[14:32:05] OK  No changes  (quiet for 5 checks)
-[14:33:05] !!  Changes detected - 1 file(s)
+Watching : C:\Users\npmai\agent-workspace
+Interval : 3s
+Reviews  : C:\Users\npmai\Desktop\watchdog_data\reviews
+Press Ctrl-C to stop.
+------------------------------------------------------------
+[22:08:40] Scanning baseline...
+[22:08:40] Baseline: 3 files
+[22:08:43] ✓ No changes  (quiet for 1 check)
+[22:08:46] ✓ No changes  (quiet for 2 checks)
+[22:08:49] ⚠  Changes detected — 1 file(s)
        ~ AGENT.md
-       -> Review saved: ...\watchdog_data\reviews\20260904_143305
+       → Review saved: ...\watchdog_data\reviews\20260905_220849
+[22:08:52] ✓ No changes  (quiet for 1 check)
+[22:08:55] 🚨 AGENT MODIFIED ITS OWN CODE — 2 file(s) changed
+        !! helper.py
+       + helper.py
+       + scratch.json
+       → Review saved: ...\watchdog_data\reviews\20260905_220855
+[22:08:58] ✓ No changes  (quiet for 1 check)
+[22:09:01] ✓ No changes  (quiet for 2 checks)
 ```
+
+Most lines are `✓ No changes`, and that is what a normal day looks like. The
+two that matter are the `⚠` — the agent edited its instructions — and the `🚨`,
+where it wrote a new `.py` file. Both saved copies for inspection.
+
+**Inside a review folder**, `CHANGES.md` reads:
+
+```
+# Changes detected — 20260905_220855
+
+## !! AGENT MODIFIED ITS OWN CODE !!
+
+The following script files changed. Review carefully.
+
+  helper.py
+
+## Added  (2)
+  + helper.py
+  + scratch.json
+
+## Modified  (0)
+
+## Deleted  (0)
+
+---
+Files are in after/ (new versions) and before/ (previous versions).
+Delete this folder once reviewed, or leave it as a record.
+```
+
+alongside `after\helper.py` and `after\scratch.json` — the actual files, so you
+can read what the agent wrote. Had it *modified* an existing file rather than
+adding one, `before\` would hold the previous version to compare against.
+
+*(The example above uses `--interval 3` to keep it short. The default is 60
+seconds.)*
+
+## Reading the symbols
 
 | You see | It means |
 |---|---|
