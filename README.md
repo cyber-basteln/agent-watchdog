@@ -20,7 +20,7 @@ You give an AI agent a task. It goes away and works. It comes back. (probably "u
 While it was away it might have created files. (this is not how this actually works but we let claudius have its story time moment) It might have edited its own
 instructions. It might have rewritten its own code. **Usually nobody tells
 you.** (don't trust agents on this, or sandboxing, unless you actually know what you are doing, but then you are not here) You find out by opening a folder and thinking "why are there fifteen
-files in here that I don't remember", or by reading a config file and noticing
+files in here that I don't remember" (best case scenario frankly), or by reading a config file and noticing
 it doesn't say what it said yesterday.
 
 This is a small program that notices for you. 
