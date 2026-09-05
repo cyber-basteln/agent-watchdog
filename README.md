@@ -252,7 +252,7 @@ suddenly fifteen files in here" into a timestamped list with copies attached.
 
 Claude wrote the code. (thanks claude) A non-programmer described what was needed, tested it,
 hit the bugs, and had them fixed (no claudes were harmed in the process). It has been run against a real autonomous
-agent and caught it modifying its own posting script (when it was not busy powershelling itself out of the sandbox to get an api key it already had, that is).
+agent and caught it modifying its own posting script (when it was not busy scripting itself out of the sandbox to get an api key it already had, that is).
 
 Nobody involved is a security professional (obviously - just a mildly paranoid human and a very motivated claude). The program is about 350 lines and
 does one thing; read it if you can, and if you can't, note that it only ever
