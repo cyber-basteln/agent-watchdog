@@ -15,7 +15,7 @@ python watchdog.py "C:\path\to\your\agent\folder"
 
 ## The problem
 
-You give an AI agent a task. It goes away and works. It comes back. (probably "uphill and through knee deep snow")
+You give an AI agent a task. It goes away and works. (the mines...) It comes back. (probably "uphill and through knee deep snow")
 
 While it was away it might have created files. (this is not how this works but we let claudius have its story time moment) It might have edited its own
 instructions. It might have rewritten its own code. **Usually nobody tells
