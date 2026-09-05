@@ -86,7 +86,7 @@ That's it. Leave the window open. It prints a line every check.
 
 ## What it looks like
 
-(claude said no to making the watchdog bark, alas...)
+(claude said no to making the watchdog bark, alas...opus has no sense of humor)
 
 A real session, watching a folder while an agent worked in it. The agent
 rewrote its own instructions file, then a minute later added a script:
