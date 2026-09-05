@@ -2,7 +2,7 @@
 
 **Tells you when an AI agent changes files it wasn't supposed to change.**
 
-(you can now read all of this claude-soup with minor mostly humorous human additions in brackets and lower case, or just hand the link to claude. it can build you something better or adjust this to your needs, this mostly serves as a "here is what i came up with, it is super low key and works for my very limited needs surprisingly well".)
+(you can now read all of this claude-soup with minor, mostly humorous, human additions in brackets, or just hand the link to claude. it can build you something better or adjust this to your needs, this mostly serves as a "here is what i came up with, it is super low key and works for my very limited needs surprisingly well".)
 
 One Python file. No installation, no dependencies, no AI inside it. Point it at
 a folder and leave it running.
