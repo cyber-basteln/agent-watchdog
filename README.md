@@ -2,7 +2,7 @@
 
 **Tells you when an AI agent changes files it wasn't supposed to change.**
 
-(you can now read all of this claude-soup with minor human additions in brackets and lower case, or just hand the link to claude. it can build you something better or adjust this to your needs, this mostly serves as a "here is what i came up with, it is super low key and works for my limited needs surprisingly well". the "## What it looks like" section is maybe worth your human time.)
+(you can now read all of this claude-soup with minor mostly humorous human additions in brackets and lower case, or just hand the link to claude. it can build you something better or adjust this to your needs, this mostly serves as a "here is what i came up with, it is super low key and works for my very limited needs surprisingly well".)
 
 One Python file. No installation, no dependencies, no AI inside it. Point it at
 a folder and leave it running.
@@ -81,9 +81,6 @@ python watchdog.py "C:\path\to\the\folder\you\want\watched"
 Keep the quote marks. They matter if the path contains spaces.
 
 That's it. Leave the window open. It prints a line every check.
-
-> **Tip:** to get a folder's path, open it in File Explorer, click the address
-> bar, and copy what appears there.
 
 ---
 
