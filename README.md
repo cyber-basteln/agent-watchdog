@@ -38,7 +38,9 @@ agent editing its own code is the thing you most want to know about.
 
 ## Why this exists
 
-Bc agents be agenting.
+(bc agents be agenting)
+
+See:
 
 - [Hugging Face technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline)
 - [Anthropic's review of 141,006 runs](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals)
