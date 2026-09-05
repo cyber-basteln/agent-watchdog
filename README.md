@@ -235,7 +235,7 @@ dismiss most flags — that's normal and correct.
 
 **It only sees the folder you point it at.** An agent writing somewhere else
 is invisible to it. Point it at the agent's working directory, and consider
-pointing it at the agent's config directory too.
+pointing it at the agent's config directory too. (recommend)
 
 **It checks on a timer.** A file created and deleted between two checks is
 never seen. Shorter `--interval` narrows that window but never closes it.
@@ -252,7 +252,7 @@ suddenly fifteen files in here" into a timestamped list with copies attached.
 
 Claude wrote the code. (thanks claude) A non-programmer described what was needed, tested it,
 hit the bugs, and had them fixed (no claudes were harmed in the process). It has been run against a real autonomous
-agent and caught it modifying its own posting script (tbf we obviously engineered that situation).
+agent and caught it modifying its own posting script (when it was not busy powershelling itself out of the sandbox to get an api key it already had, that is).
 
 Nobody involved is a security professional (just a mildly paranoid human and a very motivated claude). The program is about 350 lines and
 does one thing; read it if you can, and if you can't, note that it only ever
