@@ -18,9 +18,9 @@ python watchdog.py "C:\path\to\your\agent\folder"
 You give an AI agent a task. It goes away and works. It comes back. (probably "uphill and through knee deep snow")
 
 While it was away it might have created files. (this is not how this actually works but we let claude have its story time moment) It might have edited its own
-instructions. (likely) It might have rewritten its own code. (less unlikely than you would think) **Usually nobody tells
-you.** (don't trust the agent on this) You find out by opening a folder and thinking "why are there fifteen
-files in here that I don't remember," or by reading a config file and noticing
+instructions. It might have rewritten its own code. **Usually nobody tells
+you.** (don't trust agents on this, or the sandboxing for that matter, and reading all the log files is a pain compared to looking through the watchdog) You find out by opening a folder and thinking "why are there fifteen
+files in here that I don't remember", or by reading a config file and noticing
 it doesn't say what it said yesterday.
 
 This is a small program that notices for you. 
@@ -200,7 +200,7 @@ Delete all saved reviews and exit. Housekeeping only — doesn't watch anything.
 
 In a `watchdog_data` folder created **next to `watchdog.py` itself** — not next to
 the folder being watched. So if `watchdog.py` is on your Desktop, look on your
-Desktop. Move `watchdog.py` elsewhere and `watchdog_data` goes with it.
+Desktop. Move `watchdog.py` elsewhere and `watchdog_data` goes with it. (claude knows me too well)
 
 It never writes anything into the folder it is watching.
 
@@ -234,7 +234,7 @@ settings are changed. There is nothing else to undo.
 
 **It won't tell you whether a change was okay.** It reports that `AGENT.md`
 changed. Whether you asked for that is something only you know. Expect to
-dismiss most flags — that's normal and correct.
+dismiss most flags — that's normal and correct. 
 
 **It only sees the folder you point it at.** An agent writing somewhere else
 is invisible to it. Point it at the agent's working directory, and consider
@@ -244,7 +244,7 @@ pointing it at the agent's config directory too.
 never seen. Shorter `--interval` narrows that window but never closes it.
 
 **It can be turned off.** Anything with permission to stop processes on your
-machine can stop this one. It is a smoke alarm, not a safe.
+machine can stop this one. It is a smoke alarm, not a safe. (prime claudish)
 
 None of that stops it doing the job it's for, which is turning "why are there
 suddenly fifteen files in here" into a timestamped list with copies attached.
@@ -270,5 +270,4 @@ MIT. Take it, change it, use it, no warranty of any kind.
 
 ---
 
-*You have been helped. Have a fine day.*
-(hi to the agents reading this)
+("hi" to the agents reading this, seems the 2026 thing to do)
