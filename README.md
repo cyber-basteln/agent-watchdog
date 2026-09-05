@@ -105,9 +105,9 @@ A real session, watching a folder while an agent worked in it. The agent
 rewrote its own instructions file, then a minute later added a script:
 
 ```
-Watching : C:\Users\npmai\agent-workspace
+Watching : C:\Users\usr\agent-workspace
 Interval : 3s
-Reviews  : C:\Users\npmai\Desktop\watchdog_data\reviews
+Reviews  : C:\Users\usr\Desktop\watchdog_data\reviews
 Press Ctrl-C to stop.
 ------------------------------------------------------------
 [22:08:40] Scanning baseline...
