@@ -254,7 +254,7 @@ Claude wrote the code. (thanks claude) A non-programmer described what was neede
 hit the bugs, and had them fixed (no claudes were harmed in the process). It has been run against a real autonomous
 agent and caught it modifying its own posting script (when it was not busy powershelling itself out of the sandbox to get an api key it already had, that is).
 
-Nobody involved is a security professional (just a mildly paranoid human and a very motivated claude). The program is about 350 lines and
+Nobody involved is a security professional (obviously - just a mildly paranoid human and a very motivated claude). The program is about 350 lines and
 does one thing; read it if you can, and if you can't, note that it only ever
 reads the folder you point it at and only ever writes into its own
 `watchdog_data` directory.
