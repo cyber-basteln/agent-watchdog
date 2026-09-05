@@ -57,8 +57,8 @@ you miss it, nothing below works and the error message won't tell you why.
 
 There is nothing else to install. No `pip install`, no API key, no account.
 
-**Download `watchdog.py`** from this page (click it, then the download button) and
-put it somewhere you'll find again. 
+**Download `watchdog.py`** from this page. click it, then the download button and
+put it somewhere you'll find again. (this will not remain the only thinly veiled reference to me losing files)
 
 ---
 
